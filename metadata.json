@@ -1,0 +1,98 @@
+[
+  {
+    "id": "py_2020",
+    "title": "Learning Python 2020",
+    "issuer": "Linked-in Learning",
+    "date": "2020-03",
+    "category": "Course",
+    "filename": "Certificate_Learning Python 2020.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Python"]
+  },
+
+  {
+    "id": "powerbi_certificate",
+    "title": "Power Bi BI Certification",
+    "issuer": "Udemi",
+    "date": "2021-10",
+    "category": "Course",
+    "filename": "Power Bi BI Certification.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Power Bi","Dashboard","Story Telling"]
+  },
+
+  {
+    "id": "da_msc_degree",
+    "title": "Data Analyst MSc Degree",
+    "issuer": "University of Glasgow",
+    "date": "2022-01",
+    "category": "Academic Degree",
+    "filename": "Data Analyst MSc Degree.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Python","R","Time-Series","Data Analysis","Predictions"]
+  },
+
+  {
+    "id": "sql_bootcamp",
+    "title": "SQL Complete Bootcamp",
+    "issuer": "Udemi",
+    "date": "2022-03",
+    "category": "Course",
+    "filename": "SQL Bootcamp Certification.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["SQL"]
+  },
+
+  {
+    "id": "datat_analyst_visualization",
+    "title": "Data Analytics and Visualization",
+    "issuer": "Accenture",
+    "date": "2023-05",
+    "category": "Course",
+    "filename": "Accenture certificate.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Data Analytics","Visualisation"]
+  },
+
+  {
+    "id": "ux_design_udacity",
+    "title": "Discovering UX Design",
+    "issuer": "Udacity",
+    "date": "2025-07",
+    "category": "Course",
+    "filename": "UX Design Certificate _Udacity.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["UX Design"]
+  },
+
+  {
+    "id": "team_leading_certificate",
+    "title": "Principle of Team Leading 5",
+    "issuer": "West College Scotland",
+    "date": "2025-08",
+    "category": "Course",
+    "filename": "Team Leading Course.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Team Leading"]
+  },
+
+  {
+    "id": "checkmarx_codebashing",
+    "title": "Checkmarx Codebashing Course",
+    "issuer": "Checkmarx",
+    "date": "2025-08",
+    "category": "Course",
+    "filename": "Codebashing Course  Certificate.pdf",
+    "credential_id": "EX-0001",
+    "credential_url": null,
+    "skills": ["Codebashing"]
+  }
+]
+

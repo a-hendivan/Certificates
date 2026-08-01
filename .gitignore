@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+thumbnails/*.png
+certificates/*.pdf
+!certificates/.gitkeep

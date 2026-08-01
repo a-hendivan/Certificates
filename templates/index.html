@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credential Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="register-header">
+  <div class="header-inner">
+    <p class="eyebrow">Credential Register</p>
+    <h1>Verified certifications, on the record.</h1>
+    <p class="sub">Every entry below links to the original issuing document. Click any card to open the PDF.</p>
+  </div>
+</header>
+
+<main class="register">
+
+  <nav class="filters" aria-label="Filter by category">
+    <button class="pill active" data-filter="all">All entries</button>
+    {% for cat in categories %}
+    <button class="pill" data-filter="{{ cat }}">{{ cat }}</button>
+    {% endfor %}
+  </nav>
+
+  {% if certificates %}
+  <div class="ledger">
+    {% for cert in certificates %}
+    <a class="entry" href="/api/certificates/{{ cert.id }}/pdf" target="_blank" rel="noopener"
+       data-category="{{ cert.category }}">
+      <div class="entry-number">No. {{ "%03d"|format(loop.revindex) }}</div>
+
+      <div class="thumb">
+        <img src="/api/certificates/{{ cert.id }}/thumbnail" alt="Preview of {{ cert.title }}"
+             loading="lazy"
+             onerror="this.closest('.thumb').classList.add('thumb-fallback')">
+        {% if cert.credential_url or cert.credential_id %}
+        <span class="seal" title="Verifiable credential">Verified</span>
+        {% endif %}
+      </div>
+
+      <div class="entry-body">
+        <h2>{{ cert.title }}</h2>
+        <p class="issuer">{{ cert.issuer }}</p>
+        <p class="date">{{ cert.date }}{% if cert.credential_id %} &middot; ID {{ cert.credential_id }}{% endif %}</p>
+        {% if cert.skills %}
+        <ul class="skills">
+          {% for skill in cert.skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty">
+    <p>No certificates registered yet.</p>
+    <p class="empty-sub">Run <code>python scripts/sync_repo.py --repo yourname/your-repo</code> to pull certificates from GitHub, then fill in <code>metadata.json</code>.</p>
+  </div>
+  {% endif %}
+
+</main>
+
+<footer class="register-footer">
+  <p>Served from a REST API &mdash; see <a href="/docs">/docs</a> for the raw endpoints.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    document.querySelectorAll('.entry').forEach(entry => {
+      const show = filter === 'all' || entry.dataset.category === filter;
+      entry.style.display = show ? '' : 'none';
+    });
+  });
+});
+</script>
+
+</body>
+</html>
