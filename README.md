@@ -1,6 +1,6 @@
 # Credential Register
 
-A small FastAPI service that turns your GitHub repo of certificate PDFs into:
+A small FastAPI service that my GitHub repo of certificate PDFs into:
 
 - A **REST API** (`/api/certificates`, `/api/certificates/{id}`, `/api/certificates/{id}/pdf`, `/api/certificates/{id}/thumbnail`)
 - A **recruiter-friendly HTML page** at `/` — a filterable "credential register" with auto-generated thumbnails of each certificate's first page.
