@@ -6,8 +6,8 @@
     "date": "2020-03",
     "category": "Course",
     "filename": "Certificate_Learning Python 2020.pdf",
-    "credential_id": "EX-0001",
-    "credential_url": null,
+    "credential_id": "ARo60iZY4iSQgv8sx8j8QkVPAoKP",
+    "credential_url": "https://www.ude.my/UC-8e3adfcb-bb13-4ab0-9d28-26df9c99d9c6",
     "skills": ["Python"]
   },
 
@@ -18,7 +18,7 @@
     "date": "2021-10",
     "category": "Course",
     "filename": "Power Bi BI Certification.pdf",
-    "credential_id": "EX-0001",
+    "credential_id": "UC-8e3adfcb-bb13-4ab0-9d28-26df9c99d9c6",
     "credential_url": null,
     "skills": ["Power Bi","Dashboard","Story Telling"]
   },
@@ -30,7 +30,7 @@
     "date": "2022-01",
     "category": "Academic Degree",
     "filename": "Data Analyst MSc Degree.pdf",
-    "credential_id": "EX-0001",
+    "credential_id": null,
     "credential_url": null,
     "skills": ["Python","R","Time-Series","Data Analysis","Predictions"]
   },
@@ -42,8 +42,8 @@
     "date": "2022-03",
     "category": "Course",
     "filename": "SQL Bootcamp Certification.pdf",
-    "credential_id": "EX-0001",
-    "credential_url": null,
+    "credential_id": "UC-4890c1d4-ab3c-487a-874f-cb965d2c4c62",
+    "credential_url": "https://www.ude.my/UC-4890c1d4-ab3c-487a-874f-cb965d2c4c62",
     "skills": ["SQL"]
   },
 
@@ -54,7 +54,7 @@
     "date": "2023-05",
     "category": "Course",
     "filename": "Accenture certificate.pdf",
-    "credential_id": "EX-0001",
+    "credential_id": "cmipqKwEBjHLGrJ2C",
     "credential_url": null,
     "skills": ["Data Analytics","Visualisation"]
   },
@@ -66,8 +66,8 @@
     "date": "2025-07",
     "category": "Course",
     "filename": "UX Design Certificate _Udacity.pdf",
-    "credential_id": "EX-0001",
-    "credential_url": null,
+    "credential_id": "6d57eb16-63a7-11f0-a1f8-3bc0551bb461",
+    "credential_url": "https://www.udacity.com/certificate/e/6d57eb16-63a7-11f0-a1f8-3bc0551bb461",
     "skills": ["UX Design"]
   },
 
@@ -78,7 +78,7 @@
     "date": "2025-08",
     "category": "Course",
     "filename": "Team Leading Course.pdf",
-    "credential_id": "EX-0001",
+    "credential_id": null,
     "credential_url": null,
     "skills": ["Team Leading"]
   },
@@ -90,9 +90,20 @@
     "date": "2025-08",
     "category": "Course",
     "filename": "Codebashing Course  Certificate.pdf",
-    "credential_id": "EX-0001",
+    "credential_id": "6d616e2de75bb918aacf49c0d4be566450e49b94",
     "credential_url": null,
     "skills": ["Codebashing"]
+  },
+  {
+    "id": "ai_app_building",
+    "title": "AI for App Building",
+    "issuer": "Google",
+    "date": "2026-11",
+    "category": "Course",
+    "filename": "AI for App Building Google.pdf",
+    "credential_id": "I2S6F5S4FH3H",
+    "credential_url": null,
+    "skills": ["AI"]
   }
 ]
 
